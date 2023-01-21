@@ -51,7 +51,7 @@ for File in Files:
                                 
                                 crop_img = img[bBoxY1: bBoxY2, bBoxX1: bBoxX2]
                                 
-                                cropName = args.d + 'day' + str(root) + '_' + str(i) + '.jpg'
+                                cropName = args.d + str(root) + '_' + str(i) + '.jpg'
                                 cv2.imwrite(cropName,crop_img)
                         lbl.close
                         break;                    
